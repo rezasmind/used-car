@@ -2,6 +2,10 @@ import { type AppType } from "next/app";
 import { Inter } from "next/font/google";
 
 import "~/styles/globals.css";
+import * as React from "react";
+
+// 1. import `NextUIProvider` component
+import { NextUIProvider } from "@nextui-org/react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -10,9 +14,11 @@ const inter = Inter({
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <main className={`font-sans ${inter.variable}`}>
-      <Component {...pageProps} />
-    </main>
+    <NextUIProvider>
+      <main className={`font-sans ${inter.variable}`}>
+        <Component {...pageProps} />
+      </main>
+    </NextUIProvider>
   );
 };
 

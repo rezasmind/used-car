@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.hero {
+    background: url("../../public/bg\ header.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    background-color: #eee ;
+}
