@@ -1,6 +1,6 @@
 import { type AppType } from "next/app";
 import { Inter } from "next/font/google";
-
+import localFont from "next/font/local";
 import "~/styles/globals.css";
 import * as React from "react";
 

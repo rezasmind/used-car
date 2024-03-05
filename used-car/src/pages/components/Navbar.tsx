@@ -1,6 +1,15 @@
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+  Link,
+  Button,
+} from "@nextui-org/react";
 import React from "react";
-
 
 const Navbarr = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -27,7 +36,9 @@ const Navbarr = () => {
             className="sm:hidden"
           />
           <NavbarBrand>
-            <p className="font-bold text-inherit py-2 px-4 bg-[#ffc700] rounded-full bg-opacity-25 text-[#ffc700]">USED CAR RENTING</p>
+            <p className="rounded-full bg-[#ffc700] bg-opacity-25 px-4 py-2 font-bold text-[#ffc700]">
+              USED CAR RENTING
+            </p>
           </NavbarBrand>
         </NavbarContent>
 
@@ -49,11 +60,18 @@ const Navbarr = () => {
           </NavbarItem>
         </NavbarContent>
         <NavbarContent justify="end">
-          <NavbarItem className="hidden lg:flex text-[#FFC700]">
-            <Link href="#" className="text-[#FFC700]">Login</Link>
+          <NavbarItem className="hidden text-[#FFC700] lg:flex">
+            <Link href="#" className="text-[#FFC700]">
+              Login
+            </Link>
           </NavbarItem>
           <NavbarItem>
-            <Button as={Link} className="text-[#FFC700] bg-[#FFC700] bg-opacity-15" href="#" variant="flat">
+            <Button
+              as={Link}
+              className="bg-[#FFC700] bg-opacity-15 text-[#FFC700]"
+              href="#"
+              variant="flat"
+            >
               Sign Up
             </Button>
           </NavbarItem>
