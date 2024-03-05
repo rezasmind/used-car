@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import Navbarr from "./components/Navbar";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
@@ -24,18 +23,18 @@ export default function Home() {
 
           <div className="hero1 flex flex-col items-center justify-center gap-2">
             <div className=" mt-32 mb-4 flex flex-col items-center justify-center gap-2">
-              <h1 className="text-2xl">Today's Offer</h1>
-              <h2 className="text-[#FFC700] text-4xl" ><p className={stretch.className}>TOYOTA COROLLA 2021</p></h2>
+              <h1 className="text-2xl">Today&rsquo;s Offer</h1>
+              <h2 className="text-[#FFC700] text-4xl" ><span className={stretch.className}>TOYOTA COROLLA 2021</span></h2>
               <span className="text-sm">399$ per month</span>
             </div>
 
             <div className="buttons flex flex-row gap-4">
-              <Button className=" rounded-lg bg-[#FFC700] px-4 py-2">
+              <Button className="rounded-lg bg-[#FFC700] px-4 py-2">
                 {" "}
                 Buy Now
               </Button>
               <Button
-                className="border-1 border border-white bg-none px-4 py-2 text-white"
+                className="border-1 border-white bg-none px-4 py-2 text-white"
                 variant="bordered"
               >
                 {" "}

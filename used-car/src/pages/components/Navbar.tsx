@@ -30,7 +30,7 @@ const Navbarr = () => {
   return (
     <>
       <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-red text-white">
-        <NavbarContent className="">
+        <NavbarContent>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             className="sm:hidden"
