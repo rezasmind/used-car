@@ -12,7 +12,6 @@ export default function Home() {
       <Head>
         <title>Used Car Renting</title>
         <meta name="description" content="Used Car Selling Renting" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen w-full  flex-col  ">
         <div className="hero flex h-[88vh] w-full flex-col items-center text-white">
