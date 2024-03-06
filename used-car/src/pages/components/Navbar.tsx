@@ -10,6 +10,8 @@ import {
   Button,
 } from "@nextui-org/react";
 import React from "react";
+import logo from "public/logo.png";
+import Image from "next/image";
 
 const Navbarr = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -36,9 +38,7 @@ const Navbarr = () => {
             className="sm:hidden"
           />
           <NavbarBrand>
-            <p className="rounded-full bg-[#ffc700] bg-opacity-25 px-4 py-2 font-bold text-[#ffc700]">
-              USED CAR RENTING
-            </p>
+            <Image src={logo} alt={""} width={150} />
           </NavbarBrand>
         </NavbarContent>
 
