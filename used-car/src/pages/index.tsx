@@ -8,6 +8,9 @@ import { Select, SelectItem } from "@nextui-org/react";
 import { FaCarSide } from "react-icons/fa6";
 import { FaLocationArrow } from "react-icons/fa";
 import { Input } from "@nextui-org/react";
+import left from "public/left.svg";
+import right from "public/right.svg";
+
 const stretch = localFont({ src: "../../public/fonts/font.ttf" });
 
 export default function Home() {
@@ -101,20 +104,60 @@ export default function Home() {
                 <SelectItem key={3}>Ferrari</SelectItem>
               </Select>
 
-              <div className="datepicker basis-1/4 w-1/3">
-                <p className=" text-sm mb-1">Pick-up date</p>
-                <input aria-label="Date" type="date" className=" border-3 border-[#eee] w-full rounded-2xl py-1 px-3 text-gray-500"/>
+              <div className="datepicker w-1/3 basis-1/4">
+                <p className=" mb-1 text-sm">Pick-up date</p>
+                <input
+                  aria-label="Date"
+                  type="date"
+                  className=" w-full rounded-xl border-2 border-[#eee] px-3 py-1 text-gray-500"
+                />
               </div>
 
-              <div className="datepicker basis-1/4 w-1/3">
-                <p className=" text-sm mb-1">Drop-of date</p>
-                <input aria-label="Date" type="date" className=" border-3 border-[#eee] w-full rounded-2xl py-1 px-3 text-gray-500"/>
+              <div className="datepicker w-1/3 basis-1/4">
+                <p className=" mb-1 text-sm">Drop-of date</p>
+                <input
+                  aria-label="Date"
+                  type="date"
+                  className=" w-full rounded-xl border-2 border-[#eee] px-3 py-1 text-gray-500"
+                />
               </div>
 
-              <div className="w-1/4 basis-1/4 flex items-center justify-center ">
-              <Button className="w-full bg-[#FFC700] mt-5 shadow-lg shadow-[#ffc700]">
-                Submit
-              </Button>
+              <div className="flex w-1/4 basis-1/4 items-center justify-center ">
+                <Button className="mt-5 w-full bg-[#FFC700] shadow-lg shadow-[#ffc700]">
+                  Submit
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="banners mb-12 flex w-full flex-col items-center justify-center">
+          <div className="banner-sec flex w-[70vw] flex-row items-center justify-center gap-4">
+            <div className="left flex h-64 w-1/2 flex-row items-center justify-center rounded-xl bg-[#ffc700] p-12 shadow-lg shadow-[#ffc700] transition-all duration-500 hover:shadow-md">
+              <div className="left-left w-1/2 text-white">
+                <h3 className="mb-4 text-3xl font-bold text-white">
+                  Do you want to rent a car?
+                </h3>
+                <Button variant="bordered" className="border-white text-white">
+                  Book a car
+                </Button>
+              </div>
+              <div className="left-right flex w-1/2 flex-row justify-end">
+                <Image src={left} alt={""} />
+              </div>
+            </div>
+
+            <div className="right flex h-64 w-1/2 flex-row items-center justify-center rounded-xl bg-[#1d1d1d] p-12 shadow-lg shadow-[#1d1d1d] transition-all duration-500 hover:shadow-md">
+              <div className="right-left w-1/2">
+                <h3 className="mb-4 text-3xl font-bold text-white">
+                  Looking for classic cars to rent
+                </h3>
+                <Button variant="bordered" className="text-white">
+                  Rent Classic!
+                </Button>
+              </div>
+              <div className="right-right flex w-1/2 flex-row justify-end">
+                <Image src={right} alt={""} />
               </div>
             </div>
           </div>
