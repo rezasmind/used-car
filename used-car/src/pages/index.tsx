@@ -112,7 +112,7 @@ export default function Home() {
               </div>
 
               <div className="w-1/4 basis-1/4 flex items-center justify-center ">
-              <Button className="w-full bg-[#FFC700] mt-5">
+              <Button className="w-full bg-[#FFC700] mt-5 shadow-lg shadow-[#ffc700]">
                 Submit
               </Button>
               </div>
