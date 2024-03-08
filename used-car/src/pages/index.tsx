@@ -13,6 +13,10 @@ import left from "public/left.svg";
 import right from "public/right.svg";
 import { Card, CardFooter } from "@nextui-org/react";
 import car1 from "public/car1.jpg";
+import first from "public/first.svg"
+import second from "public/second.svg"
+import third from "public/thrid.svg"
+import fourth from "public/fourth.svg"
 
 const stretch = localFont({ src: "../../public/fonts/font.ttf" });
 
@@ -202,8 +206,11 @@ export default function Home() {
                   className="h-96 w-full object-cover "
                   src={car1}
                 />
-                <CardFooter className="border-1 rounded-large shadow-small absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden border-white/20 py-1 before:rounded-xl before:bg-white/10">
-                  <p className="text-tiny text-white/80">Available soon.</p>
+                <CardFooter className="border-1 rounded-large shadow-small absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden border-white/20 py-1 before:rounded-xl before:bg-white/10 flex flex-col">
+                  <div className=" flex flex-row mb-2 items-center justify-center gap-3">
+                  <p className="text-tiny text-white/80">Lamborghini Gallarado 2021</p>
+                  <p className="text-[#ffc700] text-tiny bg-[#1d1d1d] p-2 rounded-md">299$/pm</p>
+                  </div>
                   <Button
                     className="text-tiny bg-black/20 text-white"
                     variant="flat"
@@ -228,8 +235,11 @@ export default function Home() {
                   className=" h-full w-full object-cover"
                   src={car1}
                 />
-                <CardFooter className="border-1 rounded-large shadow-small absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden border-white/20 py-1 before:rounded-xl before:bg-white/10">
-                  <p className="text-tiny text-white/80">Available soon.</p>
+                <CardFooter className="border-1 rounded-large shadow-small absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden border-white/20 py-1 before:rounded-xl before:bg-white/10 flex flex-col">
+                  <div className=" flex flex-row mb-2 ">
+                  <p className="text-tiny text-white/80">Lamborghini Gallarado 2021</p>
+                  <p className="text-[#ffc700] text-tiny bg-[#1d1d1d] p-2 rounded-md">299$/pm</p>
+                  </div>
                   <Button
                     className="text-tiny bg-black/20 text-white"
                     variant="flat"
@@ -251,8 +261,11 @@ export default function Home() {
                   className=" h-full w-full object-cover"
                   src={car1}
                 />
-                <CardFooter className="border-1 rounded-large shadow-small absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden border-white/20 py-1 before:rounded-xl before:bg-white/10">
-                  <p className="text-tiny text-white/80">Available soon.</p>
+                <CardFooter className="border-1 rounded-large shadow-small absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden border-white/20 py-1 before:rounded-xl before:bg-white/10 flex flex-col">
+                  <div className=" flex flex-row mb-2 ">
+                  <p className="text-tiny text-white/80">Lamborghini Gallarado 2021</p>
+                  <p className="text-[#ffc700] text-tiny bg-[#1d1d1d] p-2 rounded-md">299$/pm</p>
+                  </div>
                   <Button
                     className="text-tiny bg-black/20 text-white"
                     variant="flat"
@@ -274,8 +287,11 @@ export default function Home() {
                   className=" h-full w-full object-cover"
                   src={car1}
                 />
-                <CardFooter className="border-1 rounded-large shadow-small absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden border-white/20 py-1 before:rounded-xl before:bg-white/10">
-                  <p className="text-tiny text-white/80">Available soon.</p>
+                <CardFooter className="border-1 rounded-large shadow-small absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden border-white/20 py-1 before:rounded-xl before:bg-white/10 flex flex-col">
+                  <div className=" flex flex-row mb-2 ">
+                  <p className="text-tiny text-white/80">Lamborghini Gallarado 2021</p>
+                  <p className="text-[#ffc700] text-tiny bg-[#1d1d1d] p-2 rounded-md">299$/pm</p>
+                  </div>
                   <Button
                     className="text-tiny bg-black/20 text-white"
                     variant="flat"
@@ -297,8 +313,11 @@ export default function Home() {
                   className=" h-full w-full object-cover"
                   src={car1}
                 />
-                <CardFooter className="border-1 rounded-large shadow-small absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden border-white/20 py-1 before:rounded-xl before:bg-white/10">
-                  <p className="text-tiny text-white/80">Available soon.</p>
+                <CardFooter className="border-1 rounded-large shadow-small absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden border-white/20 py-1 before:rounded-xl before:bg-white/10 flex flex-col">
+                  <div className=" flex flex-row mb-2 ">
+                  <p className="text-tiny text-white/80">Lamborghini Gallarado 2021</p>
+                  <p className="text-[#ffc700] text-tiny bg-[#1d1d1d] p-2 rounded-md">299$/pm</p>
+                  </div>
                   <Button
                     className="text-tiny bg-black/20 text-white"
                     variant="flat"
@@ -311,6 +330,45 @@ export default function Home() {
                 </CardFooter>
               </Card>
             </div>
+          </div>
+
+          <div className="stats my-12 bg-[#1d1d1d] p-12 w-full flex flex-col justify-center items-center">
+            <h1 className="font-bold text-white text-2xl mb-8"> Our Stats</h1>
+
+            <div className="stats flex flex-row w-2/3 justify-center items-center gap-8">
+              <div className="first py-3 px-6 border-2 border-[#ffc700] rounded-2xl flex flex-row items-center justify-center gap-4">
+                <Image src={first} alt="" /> 
+                <div className="stats-text flex flex-col justify-center items-start">
+                  <p className="text-[#ffc700] font-bold">2000+</p>
+                  <p className="text-[#eeeeee]">Customers</p>
+                </div>
+              </div>
+
+              <div className="second py-3 px-6 border-2 border-[#ffc700] rounded-2xl flex flex-row items-center justify-center gap-4">
+                <Image src={second} alt="" /> 
+                <div className="stats-text flex flex-col justify-center items-start">
+                  <p className="text-[#ffc700] font-bold">750+</p>
+                  <p className="text-[#eeeeee]">Cars Rented</p>
+                </div>
+              </div>
+
+              <div className="third py-3 px-6 border-2 border-[#ffc700] rounded-2xl flex flex-row items-center justify-center gap-4">
+                <Image src={third} alt="" /> 
+                <div className="stats-text flex flex-col justify-center items-start">
+                  <p className="text-[#ffc700] font-bold">100+</p>
+                  <p className="text-[#eeeeee]">Cars in garage</p>
+                </div>
+              </div>
+
+              <div className="fourth py-3 px-6 border-2 border-[#ffc700] rounded-2xl flex flex-row items-center justify-center gap-4">
+                <Image src={fourth} alt="" /> 
+                <div className="stats-text flex flex-col justify-center items-start">
+                  <p className="text-[#ffc700] font-bold">207K+</p>
+                  <p className="text-[#eeeeee]">Money Spent</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </main>
