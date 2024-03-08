@@ -10,6 +10,8 @@ import { FaLocationArrow } from "react-icons/fa";
 import { Input } from "@nextui-org/react";
 import left from "public/left.svg";
 import right from "public/right.svg";
+import { Card, CardFooter } from "@nextui-org/react";
+import car1 from "public/car1.jpg";
 
 const stretch = localFont({ src: "../../public/fonts/font.ttf" });
 
@@ -159,6 +161,155 @@ export default function Home() {
               <div className="right-right flex w-1/2 flex-row justify-end">
                 <Image src={right} alt={""} />
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="listings mt-12 flex w-full flex-col items-center">
+          <h1 className="mb-8 text-4xl font-bold text-[#1d1d1d]">
+            Features Listings
+          </h1>
+          <div className="types mb-8 flex flex-row gap-8 ">
+            <Button className="bg-[#ffc700] px-8 py-2 text-[#1d1d1d]">
+              Sport
+            </Button>
+
+            <Button
+              variant="bordered"
+              className="border-[#1d1d1d] px-8 py-2 text-[#1d1d1d]"
+            >
+              SUV
+            </Button>
+
+            <Button
+              variant="bordered"
+              className="border-[#1d1d1d] px-8 py-2 text-[#1d1d1d]"
+            >
+              Classic
+            </Button>
+          </div>
+
+          <div className="items flex w-full flex-row items-center justify-center gap-8 mb-12">
+            <div className="left w-1/3 flex flex-col justify-end items-end h-96">
+              <Card
+                isFooterBlurred
+                radius="lg"
+                className=" w-2/3 border-none h-full flex flex-col justify-center items-center"
+              >
+                <Image
+                  alt="Woman listing to music"
+                  className="object-cover h-96 w-full "
+                  src={car1}
+                  
+                />
+                <CardFooter className="border-1 rounded-large shadow-small absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden border-white/20 py-1 before:rounded-xl before:bg-white/10">
+                  <p className="text-tiny text-white/80">Available soon.</p>
+                  <Button
+                    className="text-tiny bg-black/20 text-white"
+                    variant="flat"
+                    color="default"
+                    radius="lg"
+                    size="sm"
+                  >
+                    Notify me
+                  </Button>
+                </CardFooter>
+              </Card>
+            </div>
+
+            <div className="right w-1/3 flex-row flex flex-wrap gap-4 h-96">
+              <Card
+                isFooterBlurred
+                radius="lg"
+                className="w-2/3 border-none basis-1/3"
+              >
+                <Image
+                  alt="Woman listing to music"
+                  className=" object-cover h-full w-full"
+                  src={car1}
+                />
+                <CardFooter className="border-1 rounded-large shadow-small absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden border-white/20 py-1 before:rounded-xl before:bg-white/10">
+                  <p className="text-tiny text-white/80">Available soon.</p>
+                  <Button
+                    className="text-tiny bg-black/20 text-white"
+                    variant="flat"
+                    color="default"
+                    radius="lg"
+                    size="sm"
+                  >
+                    Notify me
+                  </Button>
+                </CardFooter>
+              </Card>
+              <Card
+                isFooterBlurred
+                radius="lg"
+                className=" w-1/2 border-none basis-1/3"
+              >
+                <Image
+                  alt="Woman listing to music"
+                  className=" object-cover h-full w-full"
+                  src={car1}
+                />
+                <CardFooter className="border-1 rounded-large shadow-small absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden border-white/20 py-1 before:rounded-xl before:bg-white/10">
+                  <p className="text-tiny text-white/80">Available soon.</p>
+                  <Button
+                    className="text-tiny bg-black/20 text-white"
+                    variant="flat"
+                    color="default"
+                    radius="lg"
+                    size="sm"
+                  >
+                    Notify me
+                  </Button>
+                </CardFooter>
+              </Card>
+              <Card
+                isFooterBlurred
+                radius="lg"
+                className=" w-1/2 border-none basis-1/3"
+              >
+                <Image
+                  alt="Woman listing to music"
+                  className=" object-cover h-full w-full"
+                  src={car1}
+                />
+                <CardFooter className="border-1 rounded-large shadow-small absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden border-white/20 py-1 before:rounded-xl before:bg-white/10">
+                  <p className="text-tiny text-white/80">Available soon.</p>
+                  <Button
+                    className="text-tiny bg-black/20 text-white"
+                    variant="flat"
+                    color="default"
+                    radius="lg"
+                    size="sm"
+                  >
+                    Notify me
+                  </Button>
+                </CardFooter>
+              </Card>
+              <Card
+                isFooterBlurred
+                radius="lg"
+                className=" border-none basis-1/3"
+              >
+                <Image
+                  alt="Woman listing to music"
+                  className=" object-cover h-full w-full"
+                  src={car1}
+                />
+                <CardFooter className="border-1 rounded-large shadow-small absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden border-white/20 py-1 before:rounded-xl before:bg-white/10">
+                  <p className="text-tiny text-white/80">Available soon.</p>
+                  <Button
+                    className="text-tiny bg-black/20 text-white"
+                    variant="flat"
+                    color="default"
+                    radius="lg"
+                    size="sm"
+                  >
+                    Notify me
+                  </Button>
+                </CardFooter>
+              </Card>
             </div>
           </div>
         </div>
