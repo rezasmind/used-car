@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Head from "next/head";
 import Navbarr from "./components/Navbar";
 import { Button } from "@nextui-org/react";
@@ -189,18 +190,17 @@ export default function Home() {
             </Button>
           </div>
 
-          <div className="items flex w-full flex-row items-center justify-center gap-8 mb-12">
-            <div className="left w-1/3 flex flex-col justify-end items-end h-96">
+          <div className="items mb-12 flex w-full flex-row items-center justify-center gap-8">
+            <div className="left flex h-96 w-1/3 flex-col items-end justify-end">
               <Card
                 isFooterBlurred
                 radius="lg"
-                className=" w-2/3 border-none h-full flex flex-col justify-center items-center"
+                className=" flex h-full w-2/3 flex-col items-center justify-center border-none"
               >
                 <Image
                   alt="Woman listing to music"
-                  className="object-cover h-96 w-full "
+                  className="h-96 w-full object-cover "
                   src={car1}
-                  
                 />
                 <CardFooter className="border-1 rounded-large shadow-small absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden border-white/20 py-1 before:rounded-xl before:bg-white/10">
                   <p className="text-tiny text-white/80">Available soon.</p>
@@ -217,15 +217,15 @@ export default function Home() {
               </Card>
             </div>
 
-            <div className="right w-1/3 flex-row flex flex-wrap gap-4 h-96">
+            <div className="right flex h-96 w-1/3 flex-row flex-wrap gap-4">
               <Card
                 isFooterBlurred
                 radius="lg"
-                className="w-2/3 border-none basis-1/3"
+                className="w-2/3 basis-1/3 border-none"
               >
                 <Image
                   alt="Woman listing to music"
-                  className=" object-cover h-full w-full"
+                  className=" h-full w-full object-cover"
                   src={car1}
                 />
                 <CardFooter className="border-1 rounded-large shadow-small absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden border-white/20 py-1 before:rounded-xl before:bg-white/10">
@@ -244,11 +244,11 @@ export default function Home() {
               <Card
                 isFooterBlurred
                 radius="lg"
-                className=" w-1/2 border-none basis-1/3"
+                className=" w-1/2 basis-1/3 border-none"
               >
                 <Image
                   alt="Woman listing to music"
-                  className=" object-cover h-full w-full"
+                  className=" h-full w-full object-cover"
                   src={car1}
                 />
                 <CardFooter className="border-1 rounded-large shadow-small absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden border-white/20 py-1 before:rounded-xl before:bg-white/10">
@@ -267,11 +267,11 @@ export default function Home() {
               <Card
                 isFooterBlurred
                 radius="lg"
-                className=" w-1/2 border-none basis-1/3"
+                className=" w-1/2 basis-1/3 border-none"
               >
                 <Image
                   alt="Woman listing to music"
-                  className=" object-cover h-full w-full"
+                  className=" h-full w-full object-cover"
                   src={car1}
                 />
                 <CardFooter className="border-1 rounded-large shadow-small absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden border-white/20 py-1 before:rounded-xl before:bg-white/10">
@@ -290,11 +290,11 @@ export default function Home() {
               <Card
                 isFooterBlurred
                 radius="lg"
-                className=" border-none basis-1/3"
+                className=" basis-1/3 border-none"
               >
                 <Image
                   alt="Woman listing to music"
-                  className=" object-cover h-full w-full"
+                  className=" h-full w-full object-cover"
                   src={car1}
                 />
                 <CardFooter className="border-1 rounded-large shadow-small absolute bottom-1 z-10 ml-1 w-[calc(100%_-_8px)] justify-between overflow-hidden border-white/20 py-1 before:rounded-xl before:bg-white/10">
