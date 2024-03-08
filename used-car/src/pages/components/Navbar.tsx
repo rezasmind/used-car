@@ -44,18 +44,24 @@ const Navbarr = () => {
 
         <NavbarContent className="hidden gap-4 sm:flex" justify="center">
           <NavbarItem>
-            <Link className="text-white" href="#">
-              Features
+            <Link className="text-white" href="#offer">
+              Offer
             </Link>
           </NavbarItem>
-          <NavbarItem isActive>
-            <Link href="#" className="text-[#ffc700]" aria-current="page">
-              Customers
+          <NavbarItem >
+            <Link href="#book" className="text-[#eee]">
+              Book
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link className="text-white" href="#">
-              Integrations
+            <Link className="text-white" href="#listings">
+              Listings
+            </Link>
+          </NavbarItem>
+
+          <NavbarItem>
+            <Link className="text-white" href="#stats">
+              Stats
             </Link>
           </NavbarItem>
         </NavbarContent>

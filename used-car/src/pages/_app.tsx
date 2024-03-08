@@ -14,7 +14,7 @@ const inter = Inter({
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <NextUIProvider>
-      <main className={`font-sans ${inter.variable}`}>
+      <main className={`font-sans ${inter.variable} scroll-smooth`}>
         <Component {...pageProps} />
       </main>
     </NextUIProvider>
